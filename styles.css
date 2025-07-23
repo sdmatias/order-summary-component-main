@@ -1,12 +1,27 @@
-/* ==== Reset y tipografia base ==== */
+/* ==== Reset, tipografia base y variables ==== */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+:root {
+    --color-bg: hsl(225, 100%, 94%);
+    --color-text: hsl(224, 23%, 55%);
+    --color-btn: hsl(245, 75%, 52%);
+}
+
 body {
     font-size: 16px;
     font-family: 'Red Hat Display', sans-serif;
-    background-color: hsl(225, 100%, 94%);
+    background: var(--color-bg);
+}
+
+/* ==== Card ==== */
+.card {
+    display: flex;
+    flex-direction: column;
+    margin: 3rem;
+    color: var(--color-text);
+    background: white;
 }
