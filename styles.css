@@ -10,13 +10,10 @@
     --color-title: hsl(223, 47%, 23%);
     --color-text: hsl(224, 23%, 55%);
     --color-btn: hsl(245, 75%, 52%);
+    --color-bg2: hsl(225, 100%, 98%);
 }
 
 body {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     font-family: 'Red Hat Display', sans-serif;
     background: var(--color-bg);
 }
@@ -24,36 +21,92 @@ body {
 /* ==== Image ==== */
 img {
     width: 100%;
-    border-radius: 30px 30px 0 0;
+    border-radius: 15px 15px 0 0;
 }
 
 /* ==== Card ==== */
 .card {
     max-width: 350px;
     margin: 2rem auto;
-    padding: 2rem;
-    height: 100%;
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
-    border-radius: 15px;
-    gap: 1.5rem;
-    color: var(--color-text);
     background: white;
-}
-
-/* ==== Content ==== */
-.content {
+    border-radius: 15px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
     text-align: center;
 }
 
-.content h2 {
-    padding: 1.3rem;
-    color: var(--color-title);
+.title {
+    font-size: 1.5rem;
     font-weight: 900;
+    color: var(--color-title);
 }
 
-.content p {
+.description {
     font-size: 1rem;
     line-height: 1.6;
-    padding: 0 1.5rem;
+    padding: 0 1rem;
+    color: var(--color-text);
+}
+
+.plan-box {
+    display: flex;
+    align-items: center;
+    padding: 1.5rem;
+    border-radius: 10px;
+    gap: 1rem;
+    background: var(--color-bg2);
+    width: 85%;
+    margin: 0 auto;
+}
+
+.plan-icon {
+    width: 40px;
+}
+
+.plan-details {
+    flex: 1;
+    text-align: left;
+}
+
+.plan-name {
     font-weight: 700;
+    color: var(--color-title);
+}
+
+.plan-price {
+    font-size: 0.9rem;
+    color: var(--color-text);
+}
+
+.change-link {
+    font-size: 0.9rem;
+    color: var(--color-btn);
+    text-decoration: underline;
+}
+
+.btn {
+    padding: 1rem;
+    border: none;
+    border-radius: 10px;
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 1rem;
+    width: 85%;
+    margin: 0 auto;
+}
+
+.payment {
+    background-color: var(--color-btn);
+    color: white;
+}
+
+.payment:hover {
+    background-color: #1f1ff1;
+}
+
+.cancel {
+    background-color: transparent;
+    color: var(--color-text);
 }
