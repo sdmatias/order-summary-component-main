@@ -1,4 +1,4 @@
-/* ==== Reset, tipografia base y variables ==== */
+/* ==== Reset, font, and variables ==== */
 * {
     margin: 0;
     padding: 0;
@@ -27,7 +27,7 @@ img {
 /* ==== Card ==== */
 .card {
     max-width: 350px;
-    margin: 2rem auto;
+    margin: 5rem auto;
     background: white;
     border-radius: 15px;
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
@@ -48,6 +48,8 @@ img {
     line-height: 1.6;
     padding: 0 1rem;
     color: var(--color-text);
+    width: 85%;
+    margin: 0 auto;
 }
 
 .plan-box {
@@ -99,7 +101,9 @@ img {
 
 .payment {
     background-color: var(--color-btn);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
     color: white;
+    margin-bottom: -12px;
 }
 
 .payment:hover {
@@ -109,4 +113,35 @@ img {
 .cancel {
     background-color: transparent;
     color: var(--color-text);
+    margin-bottom: 18px;
+}
+
+
+/* ==== Media query for large screens*/
+@media (min-width: 768px) {
+    .card {
+        margin: 2.6rem auto;
+        max-width: 500px;
+        gap: 2rem;
+    }
+
+    .title {
+        font-size: 2rem;
+    }
+
+    .description {
+        font-size: 1.1rem;
+        line-height: 1.8;
+        padding: 0 2rem;
+    }
+
+    .plan-box {
+        padding: 1.5rem;
+        gap: 2rem;
+    }
+
+    .btn {
+        font-size: 1.1rem;
+        padding: 1.2rem;
+    }
 }
