@@ -19,7 +19,7 @@ This is a solution to the [Order summary card challenge on Frontend Mentor](http
 **Note: Delete this note and update the table of contents based on what sections you keep.**
 
 ## Overview
-
+This repository contains my solution for the Frontend Menthor "Order summary component main" challenge. I'm Matías, web development student.
 ### The challenge
 
 Users should be able to:
@@ -28,7 +28,9 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+[](./images/screenshot-desktop.jpg)
+[](./images/screenshot-desktop-hover.jpg)
+[](./images/screenshot-mobile.jpg)
 
 Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
 
